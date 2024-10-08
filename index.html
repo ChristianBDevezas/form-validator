@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="form-validator.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <section class="container">
+      <form id="form" class="form-container" action="contact.php" method="post">
+        <h2>Form Validator</h2>
+
+        <div class="form-item">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Type your name" />
+          <span>Error message</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" placeholder="Type your email" />
+          <span>Error message</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-item">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Type your password" />
+          <span>Error message</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-item">
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="password2" id="password2" placeholder="Type your password again" />
+          <span>Error message</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-item">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" cols="20" rows="3" placeholder="Type your message"></textarea>
+          <span>Error message</span>
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="form-buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+
+    <!--Script JS-->
+    <script src="form-validator.js"></script>
+  </body>
+</html>
